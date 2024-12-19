@@ -1,0 +1,36 @@
+/* Estilos para el botón */
+.custom-button {
+    border-radius: 0; /* Sin bordes redondeados */
+    background:transparent; /* Fondo transparente */
+    color: #fff;
+    position: relative;
+    text-transform: none; /* Sin transformación en mayúsculas */
+    padding: 5px 40px; /* Espaciado */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    border: 2px solid #fff; /* Borde transparente por defecto */
+    overflow: hidden; /* Esconde cualquier contenido fuera del botón */
+    transition: color 0.4s ease; /* Transición para el color del texto */
+  }
+  
+  /* Pseudo-elemento que genera el fondo animado */
+  .custom-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Empieza fuera de la pantalla por la izquierda */
+    width: 100%;
+    height: 100%;
+    background: #FF4081; /* Color de fondo del botón en el hover */
+    transition: left 0.4s ease; /* Animación del movimiento de izquierda a derecha */
+    z-index: -1; /* Mantener el fondo detrás del texto */
+  }
+  
+  /* Efecto hover: mover el pseudo-elemento de izquierda a derecha */
+  .custom-button:hover::before {
+    left: 0; /* Mueve el fondo a la posición normal */
+  }
+  
+  .custom-button:hover {
+    color: white; /* Color del texto al pasar el cursor */
+  }
+  
