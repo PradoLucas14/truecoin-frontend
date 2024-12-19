@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Hero.css"
 
 // Importación de imágenes locales
-import image1 from '../../../assets/images/image1.jpg';
-import image2 from '../../../assets/images/image2.jpg';
-import image3 from '../../../assets/images/image3.jpg';
+import image1 from '../../../assets/images/image4.jpg';
+import image2 from '../../../assets/images/image5.jpg';
+import image3 from '../../../assets/images/image6.jpg';
 
 function Hero() {
   const sliderImages = [image1, image2, image3];
@@ -16,7 +16,7 @@ function Hero() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
