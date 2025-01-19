@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Typography, Box } from "@mui/material";
 import { Carousel } from "react-responsive-carousel";
+import "./Hero.css"
 
 const images = [
   "https://images.pexels.com/photos/102129/pexels-photo-102129.jpeg?cs=srgb&dl=pexels-daiangan-102129.jpg&fm=jpg",
@@ -73,13 +74,12 @@ function Hero() {
         <Typography variant="h3" gutterBottom>
           Bienvenido a Truecoin
         </Typography>
-        <Button
+        <Button className="btnCustomHero"
           variant="contained"
-          color="primary"
           size="large"
           onClick={() => alert("Botón presionado")}
         >
-          REGISTRATE
+          Registrate
         </Button>
       </Box>
     </Box>
