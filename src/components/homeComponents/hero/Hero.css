@@ -1,15 +1,23 @@
+.titlleHero{
+    font-size: 4.4rem !important;
+}
 .btnCustomHero {
-    background-color: transparent;
-    border: 2px solid #fff;
-    border-radius: 0;
+    background-color: transparent !important;
+    border: 2px solid #fff !important;
+    border-radius: 0 !important;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.1rem !important;
     position: relative;
     overflow: hidden;
-    color: #fff;
+    color: #FF007F;
     transition: color 0.3s ease;
-}
-  .btnCustomHero::before {
+    z-index: 1;
+}  
+.btnCustomHero span {
+    position: relative;
+    z-index: 2;
+}  
+.btnCustomHero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -18,6 +26,7 @@
     height: 100%;
     background-color: #FF007F;
     transition: left 0.3s ease;
+    z-index: 1;
 }  
 .btnCustomHero:hover {
     color: #fff;

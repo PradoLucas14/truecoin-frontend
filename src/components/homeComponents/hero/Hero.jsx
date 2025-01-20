@@ -71,7 +71,7 @@ function Hero() {
           textAlign: "center",
         }}
       >
-        <Typography variant="h3" gutterBottom>
+        <Typography variant="h3" gutterBottom className="titlleHero"> 
           Bienvenido a Truecoin
         </Typography>
         <Button className="btnCustomHero"
@@ -79,7 +79,7 @@ function Hero() {
           size="large"
           onClick={() => alert("Botón presionado")}
         >
-          Registrate
+          <span>Explorar Más</span>
         </Button>
       </Box>
     </Box>
