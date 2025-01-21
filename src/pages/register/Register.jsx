@@ -34,46 +34,57 @@ function Register() {
     <Box
       sx={{
         width: "100%",
-        height: "100vh", // Contenedor principal que ocupa toda la pantalla
+        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#f5f5f5",
+        backgroundImage: "linear-gradient(135deg, #00C9FF, violet)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Container
+        disableGutters
         sx={{
-          width: "80%",
+          width: "100%",
+          maxWidth: "80%",
           height: "70%",
           display: "flex",
           boxShadow: 4,
-          borderRadius: 3,
+          borderRadius: 0,
           overflow: "hidden",
           backgroundColor: "#fff",
         }}
       >
-        {/* Columna izquierda: Formulario */}
         <Grid
           container
           sx={{
             flex: 1,
+            width: "100%",
+            height: "100%",
+            margin: 0,
           }}
         >
+          {/* Columna izquierda: Formulario */}
           <Grid
             item
             xs={12}
             md={6}
             sx={{
               display: "flex",
-              alignItems: "center",
+              flexDirection: "column",
               justifyContent: "center",
-              padding: 3,
+              alignItems: "center",
+              padding: 0,
+              height: "100%",
+              width: "100%",
             }}
           >
             <Box
               sx={{
                 width: "100%",
                 maxWidth: 400,
+                paddingX: 3,
               }}
             >
               <Typography component="h1" variant="h5" gutterBottom>
@@ -153,6 +164,10 @@ function Register() {
             md={6}
             sx={{
               position: "relative",
+              height: "100%",
+              width: "100%",
+              margin: 0,
+              padding: 0,
               backgroundImage: `url('https://media.vogue.es/photos/5f96ff4eb353d2e554b4f75a/master/pass/MIA_BAKERY_0962_Raul%20Co%CC%81rdoba%20Photography.jpg')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -163,9 +178,9 @@ function Register() {
                 position: "absolute",
                 top: 0,
                 left: 0,
-                width: "100%",
+                width: "92%",
                 height: "100%",
-                backgroundColor: "rgba(0, 0, 0, 0.5)", // Overlay semitransparente
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -175,10 +190,10 @@ function Register() {
                 padding: 3,
               }}
             >
-              <Typography variant="h3" gutterBottom>
+              <Typography variant="h3" gutterBottom className="textRegister">
                 Hola, somos Truecoin
               </Typography>
-              <Typography variant="h6">
+              <Typography variant="h6" className="textRegister">
                 Únete a esta increíble comunidad
               </Typography>
             </Box>
