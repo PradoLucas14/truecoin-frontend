@@ -153,7 +153,7 @@ function Register() {
             md={6}
             sx={{
               position: "relative",
-              backgroundImage: `url('https://via.placeholder.com/800x600')`,
+              backgroundImage: `url('https://media.vogue.es/photos/5f96ff4eb353d2e554b4f75a/master/pass/MIA_BAKERY_0962_Raul%20Co%CC%81rdoba%20Photography.jpg')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
