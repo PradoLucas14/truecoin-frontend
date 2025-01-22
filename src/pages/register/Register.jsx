@@ -7,6 +7,7 @@ import {
   Grid,
   Container,
 } from "@mui/material";
+import"./Register.css"
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -87,7 +88,7 @@ function Register() {
                 paddingX: 3,
               }}
             >
-              <Typography component="h1" variant="h5" gutterBottom>
+              <Typography component="h1" variant="h5" gutterBottom className="tittleRegister">
                 Registro
               </Typography>
               <Box component="form" onSubmit={handleSubmit} noValidate>
@@ -180,7 +181,7 @@ function Register() {
                 left: 0,
                 width: "92%",
                 height: "100%",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "rgba(0, 0, 0, 0.6)",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -190,12 +191,27 @@ function Register() {
                 padding: 3,
               }}
             >
-              <Typography variant="h3" gutterBottom className="textRegister">
+            <Typography
+                variant="h3"
+                gutterBottom
+                sx={{
+                    background: "linear-gradient(135deg, pink,  violet)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                }}
+                >
                 Hola, somos Truecoin
-              </Typography>
-              <Typography variant="h6" className="textRegister">
+                </Typography>
+                <Typography
+                variant="h6"
+                sx={{
+                    background: "linear-gradient(135deg, #fff, #fff)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                }}
+                >
                 Únete a esta increíble comunidad
-              </Typography>
+            </Typography>
             </Box>
           </Grid>
         </Grid>
