@@ -1,5 +1,30 @@
-.tittleRegister{
-    color: #FF007F;
-    font-size: 2.2rem;
-    text-align: center;
+.bgButton{
+    background-color: black !important;
 }
+
+.bgForm{
+    background: linear-gradient(135deg, #0a2a43, #4a90e2);
+}
+
+.styleButton{
+    border: white solid 2px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.bgInfoCoin, .styleImputDates{
+    background-color:#d9d9d9 !important;
+   
+}
+
+
+/* .styleButton, .styleImputDates{
+    width: 75% !important;
+    margin: 0 auto;
+} */
+
+
+  
+  
+  
+ 
