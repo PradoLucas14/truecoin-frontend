@@ -18,11 +18,11 @@ const Register = () => {
     if (login(usuario)) {
       Swal.fire({
         title: "  Usuario logueado",
-        text: "Bienvenido a Fit Factory",
+        text: "Bienvenido a TrueCoin",
         icon: "success",
       });
       setUsuarioLogueado(usuario.email);
-      navegacion("/administrador");
+      
     } else {
       Swal.fire({
         title: "Error en el login",
