@@ -26,6 +26,9 @@
    
 }
 
+.styleImputDates{
+    border: black solid 2px !important;
+}
 
 /* .styleButton, .styleImputDates{
     width: 75% !important;
