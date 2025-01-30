@@ -39,8 +39,8 @@ const Register = () => {
           <h3>Imagen</h3>
         </Col>
         <Col sm={12} md={6} lg={6} className='bgForm py-5'>
-          <h1 className='text-center py-3 text-white'>¡Bienvenido De Nuevo!</h1>
-          <div className='d-flex text-white mx-5 px-2'>
+          <h1 className='text-center py-3'>¡Bienvenido De Nuevo!</h1>
+          <div className='d-flex mx-5 px-2'>
             <p className='pe-2'>¿A un no tienes cuenta? </p>
             <p className='text-decoration-underline'>CrearCuenta</p>
           </div>
@@ -50,7 +50,7 @@ const Register = () => {
             className="px-2 px-md-5 pb-2 formText py-4 mx-5"
           >
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label className='fw-bold text-white pb-2'>Nombre de usuario</Form.Label>
+              <Form.Label className='fw-bold pb-2'>Nombre de usuario</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Ej: juan@mail.com"
@@ -78,7 +78,7 @@ const Register = () => {
               </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label className='fw-bold text-white'>Contraseña:</Form.Label>
+              <Form.Label className='fw-bold'>Contraseña:</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="ingrese una contraseña"
@@ -109,14 +109,14 @@ const Register = () => {
               </Form.Text>
             </Form.Group>
             <div className="">
-              <div className='d-flex justify-content-between text-white'>
+              <div className='d-flex justify-content-between'>
                 <label>
                   <input type="checkbox" /> Mantener Conexión
                 </label>
                 <p className='text-decoration-underline'>¿Has olvidado tu contraseña?</p>
               </div>
               <div className='text-center'>
-                <button className="bgButton px-3 py-1 border-1 text-white styleButton" type="submit">
+                <button className="bgButton px-3 py-1 border-1 styleButton" type="submit">
                   Acceso
                 </button>
               </div>
