@@ -3,8 +3,9 @@ import { Button, Form, Row, Col } from 'react-bootstrap';
 import './Register.css';
 import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
+import {login} from"../../helpers/queries"
 
-const Register = () => {
+const Register = ({setUsuarioLogueado}) => {
 
   const {
     register,
