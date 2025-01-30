@@ -35,13 +35,13 @@ const Register = () => {
   return (
     <div className="container mainSection">
       <Row>
-        <Col md={6} lg={6} className='bgInfoCoin'>
-          <h3>Imagen</h3>
+        <Col md={6} lg={6} className='bgInfoCoin d-none d-md-block d-lg-block'>
+          
         </Col>
         <Col sm={12} md={6} lg={6} className='bgForm py-5'>
-          <h1 className='text-center py-3'>¡Bienvenido De Nuevo!</h1>
-          <div className='d-flex mx-5 px-2'>
-            <p className='pe-2'>¿A un no tienes cuenta? </p>
+          <h1 className='text-center py-3 text-white'>¡Bienvenido De Nuevo!</h1>
+          <div className='d-flex px-2 text-white justify-content-center'>
+            <p className='pe-2 '>¿A un no tienes cuenta? </p>
             <p className='text-decoration-underline'>CrearCuenta</p>
           </div>
 

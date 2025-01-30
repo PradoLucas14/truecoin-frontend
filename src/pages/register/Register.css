@@ -3,16 +3,23 @@
 }
 
 .bgForm{
-     /* background: linear-gradient(135deg, #0a2a43, #4a90e2);  */
+     background: linear-gradient(135deg, #0a2a43, #4a90e2); 
+    /* background-image: url('../../assets/BG-Login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.1); /* Color negro con 50% de opacidad */
+   /* background-blend-mode: darken;  */ 
+    
+}
+
+.bgInfoCoin{
     background-image: url('../../assets/BG-Login.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
-}
-
-.bgForm::before {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.1); 
+  background-blend-mode: darken;
 }
 
 .styleButton{
@@ -21,7 +28,7 @@
     width: 100%;
 }
 
-.bgInfoCoin, .styleImputDates{
+.styleImputDates{
     background-color:#d9d9d9 !important;
    
 }
@@ -30,11 +37,11 @@
     border: black solid 2px !important;
 }
 
-/* .styleButton, .styleImputDates{
-    width: 75% !important;
-    margin: 0 auto;
-} */
 
+p{
+    font-weight:700;
+
+}
 
   
   
