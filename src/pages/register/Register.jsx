@@ -116,7 +116,7 @@ const Register = () => {
                 <p className='text-decoration-underline'>¿Has olvidado tu contraseña?</p>
               </div>
               <div className='text-center'>
-                <button className="bgButton px-3 py-1 border-1 styleButton" type="submit">
+                <button className="bgButton px-3 py-1 border-1 styleButton text-white" type="submit">
                   Acceso
                 </button>
               </div>
