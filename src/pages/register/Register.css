@@ -3,7 +3,9 @@
 }
 
 .bgForm{
-    background: linear-gradient(135deg, #0a2a43, #4a90e2);
+    /* background: linear-gradient(135deg, #0a2a43, #4a90e2); */
+    background-image: url('../../assets/Bg-Login.png');
+    width:px !important;
 }
 
 .styleButton{
