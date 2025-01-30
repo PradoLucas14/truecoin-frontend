@@ -6,12 +6,13 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   const usuario = JSON.parse(sessionStorage.getItem("UsuarioTrueCoin")) || "";
-  
+
+  const [suarioLogueado, setUsuarioLogueado] = useState(usuario);
 
   return (
     <>
-      <Home/>
-      <Register></Register>
+      {/* <Home/> */}
+      <Register setUsuarioLogueado={setUsuarioLogueado}></Register>
     </>
   )
 }
