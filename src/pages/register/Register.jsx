@@ -4,6 +4,7 @@ import './Register.css';
 import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
 import {login} from"../../helpers/queries"
+import Logo from "../../assets/Logo.png"
 
 const Register = ({setUsuarioLogueado}) => {
 
@@ -34,15 +35,18 @@ const Register = ({setUsuarioLogueado}) => {
   };
 
   return (
-    <div className="container mainSection">
-      <Row>
-        <Col md={6} lg={6} className='bgInfoCoin d-none d-md-block d-lg-block'>
-          
-        </Col>
-        <Col sm={12} md={6} lg={6} className='bgForm py-5'>
+    <div className="container-fluid mainBody">
+
+    <div className=''>
+        <img src={Logo} alt="" className='logoTrueCoin' />
+    </div>
+
+      <Row className='justify-content-center'>
+        
+        <Col sm={8} md={7} lg={4} className=' py-5 bgForm'>
           <h1 className='text-center py-3 text-white'>¡Bienvenido De Nuevo!</h1>
-          <div className='d-flex px-2 text-white justify-content-center'>
-            <p className='pe-2 '>¿A un no tienes cuenta? </p>
+          <div className='d-flex px-2 justify-content-center text-white'>
+            <p className='pe-2 '>¿Primera vez en TrueCoin? </p>
             <p className='text-decoration-underline'>CrearCuenta</p>
           </div>
 
@@ -50,7 +54,7 @@ const Register = ({setUsuarioLogueado}) => {
             onSubmit={handleSubmit(onSubmit)}
             className="px-2 px-md-5 pb-2 formText py-4 mx-5"
           >
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3 text-white" controlId="formBasicEmail">
               <Form.Label className='fw-bold pb-2'>Nombre de usuario</Form.Label>
               <Form.Control
                 type="email"
@@ -78,7 +82,7 @@ const Register = ({setUsuarioLogueado}) => {
                 {errors.email?.message}
               </Form.Text>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group className="mb-3 text-white" controlId="formBasicPassword">
               <Form.Label className='fw-bold'>Contraseña:</Form.Label>
               <Form.Control
                 type="password"
@@ -110,7 +114,7 @@ const Register = ({setUsuarioLogueado}) => {
               </Form.Text>
             </Form.Group>
             <div className="">
-              <div className='d-flex justify-content-between'>
+              <div className='d-flex justify-content-between text-white'>
                 <label>
                   <input type="checkbox" /> Mantener Conexión
                 </label>
@@ -128,7 +132,7 @@ const Register = ({setUsuarioLogueado}) => {
         </Col>
 
       </Row>
-
+      
 
 
     </div>
