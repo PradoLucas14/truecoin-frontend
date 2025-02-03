@@ -5,7 +5,7 @@ import Register from '../register/Register'
 function Home() {
   return (
     <div>
-      <Hero/>
+      {/* <Hero/> */}
       <Register/>
     </div>
   )
