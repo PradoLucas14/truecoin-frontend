@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../../assets/Logo.png'
-import moneda from'../../../assets/moneda.png'
+import moneda from'../../../assets/Moneda.png'
 import './menu.css'
 
 const Menu = () => {
@@ -32,7 +32,7 @@ const Menu = () => {
             </NavDropdown>
             <Nav.Link href=''>Login</Nav.Link>
             <Nav.Link href="#link">
-             
+             <img src={moneda} alt="" width={50} />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
