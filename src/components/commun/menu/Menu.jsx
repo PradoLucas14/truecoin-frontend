@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../../assets/Logo.png'
 import moneda from'../../../assets/moneda.png'
+import './menu.css'
 
 const Menu = () => {
   return (
