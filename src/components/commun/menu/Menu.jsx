@@ -21,11 +21,14 @@ const Menu = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Nosotros</Nav.Link>
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Gastonomia</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                Hogar
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Ropa</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Deporte</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.5">Belleza</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.6">Tecnología</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href=''>Login</Nav.Link>
             <Nav.Link href="#link">
