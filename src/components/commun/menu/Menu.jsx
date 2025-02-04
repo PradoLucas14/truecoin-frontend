@@ -18,9 +18,9 @@ const Menu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className='text-dark fw-bold'>Home</Nav.Link>
-            <Nav.Link href="#link" className='text-dark fw-bold'>Nosotros</Nav.Link>
-            <NavDropdown title="Categorias" className='text-dark fw-bold' id="basic-nav-dropdown">
+            <Nav.Link href="#home" className='text-dark fw-bold linksMenu'>Home</Nav.Link>
+            <Nav.Link href="#link" className='text-dark fw-bold linksMenu'>Nosotros</Nav.Link>
+            <NavDropdown title="Categorias" className='text-dark fw-bold linksMenu' id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Gastonomia</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Hogar
@@ -30,7 +30,7 @@ const Menu = () => {
               <NavDropdown.Item href="#action/3.5">Belleza</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.6">Tecnología</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href='' className='text-dark fw-bold'>Login</Nav.Link>
+            <Nav.Link href='' className='text-dark fw-bold linksMenu'>Login</Nav.Link>
             <Nav.Link href="#link">
              <img src={moneda} alt="" width={50} />
             </Nav.Link>
