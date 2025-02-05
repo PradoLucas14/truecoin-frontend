@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../../components/homeComponents/hero/Hero'
+import Hero from '../../components/homeComponents/hero/hero/Hero'
 import Register from '../register/Register'
 
 function Home() {
