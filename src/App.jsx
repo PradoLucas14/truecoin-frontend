@@ -12,8 +12,9 @@ function App() {
 
   return (
     <>
-      {/* <Home/> */}
+    
       <Menu></Menu>
+      <Home></Home>
       {/* <Register setUsuarioLogueado={setUsuarioLogueado}></Register> */}
     </>
   )
