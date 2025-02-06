@@ -3,17 +3,28 @@ import Hero from '../../components/homeComponents/hero/hero/Hero'
 import Register from '../register/Register'
 import Categories from '../../components/homeComponents/hero/categories/categories'
 import CardProductos from '../../components/productos/cardProductos/CardProductos'
-import { Row } from 'react-bootstrap'
+import { Row, Container} from'react-bootstrap'
 
 function Home() {
   return (
     <div>
-      <Hero/>
+      <Hero />
       <Categories></Categories>
-      <CardProductos></CardProductos>
-      
+      <Container>
+        <Row>
+          <CardProductos></CardProductos>
+          <CardProductos></CardProductos>
+          <CardProductos></CardProductos>
+          <CardProductos></CardProductos>
+          <CardProductos></CardProductos>
+          <CardProductos></CardProductos>
+        </Row>
+      </Container>
+
+
     </div>
   )
 }
+
 
 export default Home
