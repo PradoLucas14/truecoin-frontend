@@ -11,6 +11,7 @@ function Home() {
       <Hero />
       <Categories></Categories>
       <Container>
+        <h2 className='text-center pb-3'> Productos Destacados </h2>
         <Row>
           <CardProductos></CardProductos>
           <CardProductos></CardProductos>
