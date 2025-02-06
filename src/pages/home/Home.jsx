@@ -4,6 +4,7 @@ import Register from '../register/Register'
 import Categories from '../../components/homeComponents/hero/categories/categories'
 import CardProductos from '../../components/productos/cardProductos/CardProductos'
 import { Row, Container} from'react-bootstrap'
+import './Home.css'
 
 function Home() {
   return (
