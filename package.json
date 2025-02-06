@@ -15,13 +15,13 @@
     "@mui/material": "^6.4.0",
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
-    "react-bootstrap": "^2.10.8",
+    "react-bootstrap": "^2.10.9",
     "react-dom": "^18.3.1",
-    "react-responsive-carousel": "^3.2.23",
-    "swiper": "^11.2.1",
     "react-hook-form": "^7.52.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.23.1",
-    "sweetalert2": "^11.12.0"
+    "sweetalert2": "^11.12.0",
+    "swiper": "^11.2.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
