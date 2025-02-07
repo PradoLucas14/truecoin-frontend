@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Card, Button, Container } from 'react-bootstrap'
 import Moneda from '../../../assets/moneda.png'
+import './cardProducros.css'
 
 const CardProductos = () => {
   return (
@@ -19,7 +20,7 @@ const CardProductos = () => {
               <Card.Text>
                 <img src={Moneda} alt="Moneda" width={50} className="m-0" /> 6000
               </Card.Text>
-              <Button variant="dark">Comprar</Button>
+              <button className='buttonCompra'><span>Comprar</span></button>
             </Card.Body>
           </Card>
         </Col>
