@@ -1,9 +1,11 @@
-
+.linksMenu{
+    text-decoration: none;
+    padding: 5px 0;
+}
 
 @media (min-width : 992px){
     .linksMenu {
         position: relative;
-        text-decoration: none;
         color: black;
         padding-bottom: 5px;
         display: inline-block;
