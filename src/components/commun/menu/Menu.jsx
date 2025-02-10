@@ -24,20 +24,11 @@ const Menu = () => {
           <Nav className="ms-auto">
             <NavLink to={"/"} className='text-dark fw-bold linksMenu'>Home</NavLink>
             <NavLink  className='text-dark fw-bold linksMenu'>Nosotros</NavLink>
-            <NavDropdown title="Categorias" className='text-dark fw-bold linksMenu' id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Gastonomia</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Hogar
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Ropa</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Deporte</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.5">Belleza</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.6">Tecnología</NavDropdown.Item>
-            </NavDropdown>
+            <NavLink  className='text-dark fw-bold linksMenu'>Productos</NavLink>
             <NavLink to={"/Login"} className='text-dark fw-bold linksMenu'>Login</NavLink>
-            <Nav.Link href="#link">
+            <NavLink>
              <img src={moneda} alt="" width={50} />
-            </Nav.Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
