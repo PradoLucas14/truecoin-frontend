@@ -1,0 +1,93 @@
+.bgFooter{
+    background-color: #000;
+}
+
+.imgLogo{
+    filter: drop-shadow(2px 0 0 white) 
+            drop-shadow(-2px 0 0 white) 
+            drop-shadow(0 2px 0 white) 
+            drop-shadow(0 -2px 0 white);
+}
+
+i{
+    font-size: 25px;
+}
+
+.btnRedondo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px white solid;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    transition: color 0.5s ease-in-out;
+}
+
+.btnRedondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #9e9ea2;
+    transition: left 0.3s ease-in-out;
+}
+
+.btnRedondo:hover::before {
+    left: 0; 
+}
+
+.btnRedondo:hover {
+    color: white; 
+}
+
+.btnRedondo i {
+    z-index: 1;
+}
+
+@media (min-width : 992px){
+    .linksFooter {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        padding-bottom: 5px;
+        display: inline-block;
+    }
+    
+    .linksFooter::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s ease-in-out;
+        transform: translateX(-50%);
+    
+    }
+    
+    .linksFooter::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.4s ease-in-out;
+    
+    
+    }
+    
+    .linksFooter:hover::after {
+        width: 100%;
+    }
+}
