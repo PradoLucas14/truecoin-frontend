@@ -40,12 +40,13 @@ p {
 @media (min-Width : 578px) {
     .mainBody {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-            url('../../assets/fondoLogn2.jpg');
+            url('../../assets/FondoRegister.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 50% 70%;
+        background-position: top center;
         height: 100vh;
         width: 100vw;
+        padding: 20px ;
     }
 
     .bgForm {
