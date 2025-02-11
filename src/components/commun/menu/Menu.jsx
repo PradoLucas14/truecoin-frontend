@@ -6,34 +6,29 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../../assets/Logo.png'
 import moneda from'../../../assets/Moneda.png'
 import './menu.css'
+import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
   return (
     <>
      <Navbar expand="lg" className="p-0 m-0">
       <Container fluid>
-        <Navbar.Brand href="#home">
-          <img src={Logo} alt="" width={130} />
+        <Navbar.Brand>
+          <NavLink to={"/"}>
+            <img src={Logo} alt="" width={130} />
+          </NavLink>
+          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className='text-dark fw-bold linksMenu'>Home</Nav.Link>
-            <Nav.Link href="#link" className='text-dark fw-bold linksMenu'>Nosotros</Nav.Link>
-            <NavDropdown title="Categorias" className='text-dark fw-bold linksMenu' id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Gastonomia</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Hogar
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Ropa</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Deporte</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.5">Belleza</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.6">Tecnología</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href='' className='text-dark fw-bold linksMenu'>Login</Nav.Link>
-            <Nav.Link href="#link">
+            <NavLink to={"/"} className='text-dark fw-bold linksMenu'>Home</NavLink>
+            <NavLink  className='text-dark fw-bold linksMenu'>Nosotros</NavLink>
+            <NavLink  className='text-dark fw-bold linksMenu'>Productos</NavLink>
+            <NavLink to={"/Login"} className='text-dark fw-bold linksMenu'>Login</NavLink>
+            <NavLink>
              <img src={moneda} alt="" width={50} />
-            </Nav.Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

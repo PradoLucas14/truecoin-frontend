@@ -52,10 +52,15 @@ i{
     z-index: 1;
 }
 
+.linksFooter{
+    text-decoration: none !important;
+    color: white !important;
+    border: none !important;
+}
+
 @media (min-width : 992px){
     .linksFooter {
         position: relative;
-        text-decoration: none;
         color: white;
         padding-bottom: 5px;
         display: inline-block;
@@ -91,3 +96,5 @@ i{
         width: 100%;
     }
 }
+
+
