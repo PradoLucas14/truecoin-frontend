@@ -37,11 +37,7 @@ const Register = ({setUsuarioLogueado}) => {
   return (
     <div className="container-fluid mainBody">
 
-    <div className=''>
-        <img src={Logo} alt="" className='logoTrueCoin' />
-    </div>
-
-      <Row className='justify-content-center'>
+      <Row className='justify-content-center pt-5'>
         
         <Col sm={8} md={7} lg={4} className=' py-5 bgForm'>
           <h1 className='text-center py-3 text-white'>¡Bienvenido De Nuevo!</h1>
