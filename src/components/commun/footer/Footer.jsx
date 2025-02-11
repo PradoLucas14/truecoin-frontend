@@ -9,7 +9,9 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className='bgFooter text-center'>
+      <NavLink to={'/'}>
       <img src={logo} alt="" width={250} className='imgLogo' />
+      </NavLink>
       <div className='d-md-flex d-lg-flex gap-3 justify-content-center pb-4'>
         <NavLink to={"/"}><p className='text-white linksFooter'>Home</p></NavLink>
        <NavLink> <p className='text-white linksFooter'>Nosotros</p></NavLink>
