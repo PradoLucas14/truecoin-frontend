@@ -36,6 +36,9 @@ const DatosUsuario = () => {
                     <i className="bi bi-plus-circle fs-5"></i>
                 </button>
             </div>
+            <div>
+                <h3 className='py-3'>- Mis Porductos -</h3>
+            </div>
 
 
             <Modal show={show} onHide={handleClose}>
