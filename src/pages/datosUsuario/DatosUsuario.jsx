@@ -7,10 +7,19 @@ import Moneda from '../../assets/moneda.png'
 
 const DatosUsuario = () => {
 
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false); // Primer modal
+    const [showPagoModal, setShowPagoModal] = useState(false); // Segundo modal
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const handleClosePagoModal = () => setShowPagoModal(false);
+    const handleShowPagoModal = () => setShowPagoModal(true);
+
+    const handleComprar = () => {
+        handleClose();  // Cierra el primer modal
+        handleShowPagoModal(); // Abre el segundo modal
+    };
 
     return (
         <div className='container-fluid py-3'>
@@ -50,8 +59,26 @@ const DatosUsuario = () => {
 
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="dark" onClick={handleClose}>
+                    <Button variant="dark" onClick={handleComprar}>
                         comprar
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
+            <Modal show={showPagoModal} onHide={handleClosePagoModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Realizar Pago</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>Realice la transferencia correspondiente al monto que desea cargar a su cuenta</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="" width={250} className='' />
+                    <p>Tenga en cuenta que la acreditacion puede llegar a tardar hasta un tiempo limite de 12hs</p>
+                    <p>Enviar comprobante a <a href="https://wa.me/54381340377" target="_blank" className='text-success'><i class="bi bi-whatsapp"></i></a></p>
+
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="dark" onClick={handleClosePagoModal}>
+                        cerrar
                     </Button>
                 </Modal.Footer>
             </Modal>
