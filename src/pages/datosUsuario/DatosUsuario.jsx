@@ -3,6 +3,7 @@ import './datosUsuarios.css'
 import Modena from '../../assets/moneda.png'
 import { Button, Modal } from 'react-bootstrap'
 import Moneda from '../../assets/moneda.png'
+import Administrador from '../administrador/Administrador'
 
 
 const DatosUsuario = () => {
@@ -38,6 +39,8 @@ const DatosUsuario = () => {
             </div>
             <div>
                 <h3 className='py-3'>- Mis Porductos -</h3>
+
+                <Administrador></Administrador>
             </div>
 
 

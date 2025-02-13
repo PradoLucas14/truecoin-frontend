@@ -1,4 +1,9 @@
 import React from 'react'
+import ItemProducto from'../../components/productos/itemProducto/ItemProducto'
+import { Link } from 'react-router-dom'
+import { Table } from 'react-bootstrap'
+
+
 
 const Administrador = () => {
   return (
@@ -6,9 +11,9 @@ const Administrador = () => {
       <section className="container mainSection ">
         <div className="d-flex justify-content-between align-items-center mt-5 py-3">
           <h1 className="display-5 text-white">Gestionar Clases</h1>
-          <Link className="btn bgVerde" to={"/administrador/crear"}>
+          
             <i className="bi bi-file-earmark-plus fs-4"></i>
-          </Link>
+          
         </div>
         <hr />
         <Table responsive  bordered hover>
@@ -23,9 +28,7 @@ const Administrador = () => {
             </tr>
           </thead>
           <tbody>
-            {
-              clases.map((itemClase) => <ItemClase key={itemClase._id} clase={itemClase} setClases={setClases}></ItemClase> )
-            }
+            <ItemProducto></ItemProducto>
           </tbody>
         </Table>
       </section>

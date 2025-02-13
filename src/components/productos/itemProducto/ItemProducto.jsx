@@ -1,4 +1,5 @@
 import React from 'react'
+import'./itemProducto.css'
 
 const ItemProducto = () => {
   return (
@@ -10,7 +11,7 @@ const ItemProducto = () => {
       <td className="text-center">
         <img
           src="https://images.pexels.com/photos/30624522/pexels-photo-30624522.jpeg?auto=compress&cs=tinysrgb&w=400"
-          className="imgAdministrador"
+          className="imgProducto"
           alt="Imagen Producto"
         ></img>
       </td>
@@ -19,7 +20,7 @@ const ItemProducto = () => {
           <i className="bi bi-pencil-square"></i>
         </button>
         <button className="btn btnOpciones">
-          <i className="bi bi-trash" onClick={borrarClase} ></i>
+          <i className="bi bi-trash" ></i>
         </button>
       </td>
     </tr>
