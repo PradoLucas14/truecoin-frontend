@@ -7,7 +7,7 @@ import { Table } from 'react-bootstrap'
 
 const Administrador = () => {
   return (
-    <div>
+    <div className=''>
       <section className="container mainSection ">
         <div className="d-flex justify-content-between align-items-center mt-5 py-3">
           <h1 className="display-6 fw-normal">Gestionar Producto</h1>
@@ -29,6 +29,10 @@ const Administrador = () => {
           </thead>
           <tbody>
             <ItemProducto></ItemProducto>
+            <ItemProducto></ItemProducto>
+            <ItemProducto></ItemProducto>
+            <ItemProducto></ItemProducto>
+
           </tbody>
         </Table>
       </section>
