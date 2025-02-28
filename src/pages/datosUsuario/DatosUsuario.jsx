@@ -3,8 +3,7 @@ import './datosUsuarios.css'
 import Modena from '../../assets/moneda.png'
 import { Button, Modal } from 'react-bootstrap'
 import Moneda from '../../assets/moneda.png'
-import Administrador from '../administrador/Administrador'
-
+import TablaProductos from '../../components/productos/tablaProductos/TablaProductos'
 
 const DatosUsuario = () => {
 
@@ -39,7 +38,7 @@ const DatosUsuario = () => {
                     </button>
                 </div>
                 <div>
-                    <Administrador></Administrador>
+                    <TablaProductos></TablaProductos>
                 </div>
 
 
