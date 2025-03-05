@@ -5,6 +5,8 @@ import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
 import {login} from"../../helpers/queries"
 import Logo from "../../assets/Logo.png"
+import { useNavigate } from 'react-router-dom';
+
 
 const Register = ({setUsuarioLogueado}) => {
 
@@ -14,25 +16,33 @@ const Register = ({setUsuarioLogueado}) => {
     formState: { errors },
   } = useForm();
 
+const navegacion = useNavigate();
 
+const onSubmit = (usuario) => {
+  const result = login(usuario);  // Llamamos a la función login que ahora retorna un objeto con role
 
-  const onSubmit = (usuario) => {
-    if (login(usuario)) {
-      Swal.fire({
-        title: "  Usuario logueado",
-        text: "Bienvenido a TrueCoin",
-        icon: "success",
-      });
-      setUsuarioLogueado(usuario.email);
-      
-    } else {
-      Swal.fire({
-        title: "Error en el login",
-        text: "Email o contraseña incorrecta",
-        icon: "error",
-      });
+  if (result.success) {
+    Swal.fire({
+      title: "Usuario logueado",
+      text: "Bienvenido a TrueCoin",
+      icon: "success",
+    });
+
+    setUsuarioLogueado(usuario.email); // Actualizamos el estado del usuario logueado
+    
+    if (result.role === 'admin') {
+      navegacion('/Administrador');  // Redirigir al administrador
+    } else if (result.role === 'user') {
+      navegacion('/Usario');  // Redirigir al usuario común
     }
-  };
+  } else {
+    Swal.fire({
+      title: "Error en el login",
+      text: "Email o contraseña incorrecta",
+      icon: "error",
+    });
+  }
+};
 
   return (
     <div className="container-fluid mainBody">

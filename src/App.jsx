@@ -17,11 +17,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Menu></Menu>
+        <Menu 
+          uarioLogueado={suarioLogueado}
+          setUsuarioLogueado={setUsuarioLogueado}
+        ></Menu>
 
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
-          <Route path='/Login' element={<Register></Register>}></Route>
+          <Route path='/Login' element={<Register setUsuarioLogueado={setUsuarioLogueado}></Register>}></Route>
           {/* <Route path='/Nosotros' element={<Nosotros></Nosotros>}></Route> */}
           <Route path='/Administrador' element={<Administrador></Administrador>}></Route>
           <Route path='/Usario' element={<DatosUsuario></DatosUsuario>}></Route>

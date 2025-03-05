@@ -6,9 +6,20 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../../assets/Logo.png'
 import moneda from'../../../assets/Moneda.png'
 import './menu.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
-const Menu = () => {
+
+const Menu = ({uarioLogueado, setUsuarioLogueado}) => {
+
+  const navegacion = useNavigate();
+
+  const logout = () => {
+    sessionStorage.removeItem('UsuarioTrueCoin');
+    setUsuarioLogueado("");
+    navegacion("/");
+  };
+
+
   return (
     <>
      <Navbar expand="lg" className="p-0 m-0">
@@ -31,6 +42,13 @@ const Menu = () => {
             <NavLink to={'/Usario'}>
              <img src={moneda} alt="" width={50} />
             </NavLink>
+
+            {uarioLogueado && (
+              <NavLink to={'/Usuario'}>
+                <img src={moneda} alt="" width={50} />
+              </NavLink>
+            )}
+
           </Nav>
         </Navbar.Collapse>
       </Container>
