@@ -25,6 +25,8 @@ const Menu = () => {
             <NavLink to={"/"} className='text-dark fw-bold linksMenu'>Home</NavLink>
             <NavLink  className='text-dark fw-bold linksMenu'>Nosotros</NavLink>
             <NavLink  className='text-dark fw-bold linksMenu'>Productos</NavLink>
+            <NavLink to={"/Administrador"} className='text-dark fw-bold linksMenu'>Administrador</NavLink>
+
             <NavLink to={"/Login"} className='text-dark fw-bold linksMenu'>Login</NavLink>
             <NavLink to={'/Usario'}>
              <img src={moneda} alt="" width={50} />
