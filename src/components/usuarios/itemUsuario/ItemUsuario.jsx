@@ -2,15 +2,15 @@ import React from 'react'
 
 const ItemUsuario = () => {
   return (
-    <tr>
-      <td className="text-center">1</td>
-      <td>Prado Brian</td>
-      <td className="">$nicolas@gmail.com</td>
+    <tr className='text-center'>
+      <td className="">1</td>
+      <td className=''>Prado Brian</td>
+      <td className="">nicolas@gmail.com</td>
       <td>Usuario</td>
-      <td className="text-center">
+      <td className="">
         True
       </td>
-      <td className="text-center">
+      <td className="">
         <button className="btn m-1 btnOpciones">
           <i className="bi bi-pencil-square"></i>
         </button>

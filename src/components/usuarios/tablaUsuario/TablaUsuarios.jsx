@@ -1,5 +1,6 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
+import ItemUsuario from '../itemUsuario/ItemUsuario'
 
 
 const TablaUsuarios = () => {
@@ -26,7 +27,7 @@ const TablaUsuarios = () => {
             </tr>
           </thead>
           <tbody>
-
+           
 
           </tbody>
         </Table>
